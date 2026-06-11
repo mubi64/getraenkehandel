@@ -1,0 +1,10 @@
+[
+  {
+    "warehouse_name": "Hauptlager",
+    "is_group": 0
+  },
+  {
+    "warehouse_name": "Leergut-Lager",
+    "is_group": 0
+  }
+]

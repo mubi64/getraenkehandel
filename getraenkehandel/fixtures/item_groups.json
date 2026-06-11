@@ -1,0 +1,58 @@
+[
+  {
+    "doctype": "Item Group",
+    "name": "Getränke",
+    "item_group_name": "Getränke",
+    "parent_item_group": "All Item Groups",
+    "is_group": 1
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Bier",
+    "item_group_name": "Bier",
+    "parent_item_group": "Getränke",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Wasser",
+    "item_group_name": "Wasser",
+    "parent_item_group": "Getränke",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Softdrinks",
+    "item_group_name": "Softdrinks",
+    "parent_item_group": "Getränke",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Säfte",
+    "item_group_name": "Säfte",
+    "parent_item_group": "Getränke",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Spirituosen",
+    "item_group_name": "Spirituosen",
+    "parent_item_group": "Getränke",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Pfand",
+    "item_group_name": "Pfand",
+    "parent_item_group": "All Item Groups",
+    "is_group": 0
+  },
+  {
+    "doctype": "Item Group",
+    "name": "Leergut",
+    "item_group_name": "Leergut",
+    "parent_item_group": "All Item Groups",
+    "is_group": 0
+  }
+]

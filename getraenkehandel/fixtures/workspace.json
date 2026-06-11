@@ -1,0 +1,406 @@
+[
+ {
+  "charts": [],
+  "content": "[{\"id\":\"gh-hero-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-hero\",\"col\":12}},{\"id\":\"gh-spacer-0a\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-kpi-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-kpi\",\"col\":12}},{\"id\":\"gh-spacer-0b\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-sc-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Offene Rechnungen\",\"col\":3}},{\"id\":\"gh-sc-2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kunden\",\"col\":3}},{\"id\":\"gh-sc-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lieferscheine\",\"col\":3}},{\"id\":\"gh-sc-4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pfand Ledger\",\"col\":3}},{\"id\":\"gh-spacer-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Verkauf &amp; Lieferung</b></span>\",\"col\":12}},{\"id\":\"gh-card-1\",\"type\":\"card\",\"data\":{\"card_name\":\"Rechnungen\",\"col\":4}},{\"id\":\"gh-card-2\",\"type\":\"card\",\"data\":{\"card_name\":\"Kunden & Konditionen\",\"col\":4}},{\"id\":\"gh-card-3\",\"type\":\"card\",\"data\":{\"card_name\":\"Zahlungen\",\"col\":4}},{\"id\":\"gh-spacer-2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Lager &amp; Sortiment</b></span>\",\"col\":12}},{\"id\":\"gh-card-4\",\"type\":\"card\",\"data\":{\"card_name\":\"Artikel\",\"col\":4}},{\"id\":\"gh-card-5\",\"type\":\"card\",\"data\":{\"card_name\":\"Preise\",\"col\":4}},{\"id\":\"gh-card-6\",\"type\":\"card\",\"data\":{\"card_name\":\"Lager\",\"col\":4}},{\"id\":\"gh-spacer-3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Pfand &amp; Berichte</b></span>\",\"col\":12}},{\"id\":\"gh-card-7\",\"type\":\"card\",\"data\":{\"card_name\":\"Pfand\",\"col\":4}},{\"id\":\"gh-card-8\",\"type\":\"card\",\"data\":{\"card_name\":\"Buchhaltungsberichte\",\"col\":4}},{\"id\":\"gh-card-9\",\"type\":\"card\",\"data\":{\"card_name\":\"Verkaufsberichte\",\"col\":4}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "gk-dashboard-hero",
+    "label": "gk-dashboard-hero"
+   },
+   {
+    "custom_block_name": "gk-dashboard-kpi",
+    "label": "gk-dashboard-kpi"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "retail",
+  "idx": 0,
+  "is_hidden": 0,
+  "public": 1,
+  "label": "Getraenkehandel",
+  "links": [
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Rechnungen",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Ausgangsrechnung",
+    "link_count": 0,
+    "link_to": "Sales Invoice",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Lieferschein",
+    "link_count": 0,
+    "link_to": "Delivery Note",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Angebot",
+    "link_count": 0,
+    "link_to": "Quotation",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Auftrag",
+    "link_count": 0,
+    "link_to": "Sales Order",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Kunden & Konditionen",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Kunde",
+    "link_count": 0,
+    "link_to": "Customer",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Kundengruppe",
+    "link_count": 0,
+    "link_to": "Customer Group",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Zahlungsbedingungen",
+    "link_count": 0,
+    "link_to": "Payment Terms Template",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Zahlungen",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Zahlungseingang",
+    "link_count": 0,
+    "link_to": "Payment Entry",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Zahlungsaufforderung",
+    "link_count": 0,
+    "link_to": "Payment Request",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Artikel",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Artikel",
+    "link_count": 0,
+    "link_to": "Item",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Artikelgruppe",
+    "link_count": 0,
+    "link_to": "Item Group",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Preise",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Artikelpreise",
+    "link_count": 0,
+    "link_to": "Item Price",
+    "link_type": "DocType",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Preisliste",
+    "link_count": 0,
+    "link_to": "Price List",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Preisregel",
+    "link_count": 0,
+    "link_to": "Pricing Rule",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Lager",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Lager",
+    "link_count": 0,
+    "link_to": "Warehouse",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Lagerbestand",
+    "link_count": 0,
+    "link_to": "Stock Balance",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Pfand",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Pfand Ledger",
+    "link_count": 0,
+    "link_to": "Pfand Ledger",
+    "link_type": "Report",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Gutschrift",
+    "link_count": 0,
+    "link_to": "Sales Invoice",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Buchhaltungsberichte",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Hauptbuch",
+    "link_count": 0,
+    "link_to": "General Ledger",
+    "link_type": "Report",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Offene Posten",
+    "link_count": 0,
+    "link_to": "Accounts Receivable Summary",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Kontenentwicklung",
+    "link_count": 0,
+    "link_to": "Balance Sheet",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Verkaufsberichte",
+    "link_count": 0,
+    "onboard": 0,
+    "type": "Card Break"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Verkaufsanalyse",
+    "link_count": 0,
+    "link_to": "Sales Analytics",
+    "link_type": "Report",
+    "onboard": 1,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Ausgangsrechnungen",
+    "link_count": 0,
+    "link_to": "Sales Register",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "Artikel-Umsatz",
+    "link_count": 0,
+    "link_to": "Item-wise Sales Register",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   }
+  ],
+  "module": "Getraenkehandel",
+  "name": "Getraenkehandel",
+  "parent_page": "",
+  "roles": [],
+  "sequence_id": 1.0,
+  "shortcuts": [
+   {
+    "color": "Red",
+    "format": "{} offen",
+    "label": "Offene Rechnungen",
+    "link_to": "Sales Invoice",
+    "stats_filter": "{\"status\": [\"in\", [\"Unpaid\", \"Overdue\"]], \"docstatus\": 1}",
+    "type": "DocType"
+   },
+   {
+    "color": "Blue",
+    "format": "{} gesamt",
+    "label": "Kunden",
+    "link_to": "Customer",
+    "stats_filter": "{\"disabled\": 0}",
+    "type": "DocType"
+   },
+   {
+    "color": "Orange",
+    "format": "{} ausstehend",
+    "label": "Lieferscheine",
+    "link_to": "Delivery Note",
+    "stats_filter": "{\"status\": [\"in\", [\"Draft\", \"To Bill\"]], \"docstatus\": [\"!=\", 2]}",
+    "type": "DocType"
+   },
+   {
+    "color": "Purple",
+    "doc_view": "Report",
+    "label": "Pfand Ledger",
+    "link_to": "Pfand Ledger",
+    "type": "Report"
+   }
+  ],
+  "title": "Getraenkehandel",
+  "creation": "2024-01-01 00:00:00.000000",
+  "modified": "2024-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "owner": "Administrator"
+ }
+]

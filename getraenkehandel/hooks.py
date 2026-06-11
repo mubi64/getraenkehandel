@@ -5,6 +5,91 @@ app_description = "AI-powered ERP for German beverage distributors"
 app_email = "info@kistly.de"
 app_license = "mit"
 
+# Installation
+before_install = "getraenkehandel.setup.install.before_install"
+after_install = "getraenkehandel.setup.install.after_install"
+
+# Runs after the ERPNext setup wizard completes — company name is known at this point
+setup_wizard_complete = "getraenkehandel.setup.install.after_setup_wizard"
+
+# Fixtures — global (non-company-specific) records exported/imported via bench
+fixtures = [
+    {
+        "dt": "Item Group",
+        "filters": [["item_group_name", "in", [
+            "Getränke", "Bier", "Wasser", "Softdrinks", "Säfte", "Spirituosen", "Pfand", "Leergut"
+        ]]],
+    },
+    {
+        "dt": "Customer Group",
+        "filters": [["customer_group_name", "in", [
+            "Gastronomie", "Kiosk/Späti", "Einzelhandel", "Privatkunde"
+        ]]],
+    },
+    {
+        "dt": "Price List",
+        "filters": [["price_list_name", "in", [
+            "Gastro Preisliste", "Kiosk Preisliste", "Handel Preisliste"
+        ]]],
+    },
+    {
+        "dt": "Payment Terms Template",
+        "filters": [["template_name", "in", [
+            "Sofort fällig", "14 Tage netto", "30 Tage netto"
+        ]]],
+    },
+    {
+        "dt": "Role Profile",
+        "filters": [["role_profile", "=", "Getraenkehandel Operator"]],
+    },
+    {
+        "dt": "Item",
+        "filters": [["item_code", "in", [
+            "PFAND-025", "PFAND-033", "PFAND-050", "PFAND-KISTE",
+            "COLA-050", "FANTA-050", "SPRITE-050",
+            "BIER-033", "BIER-050", "WEIZEN-050", "BIER-KISTE-20",
+            "WASSER-050", "WASSER-100", "WASSER-KISTE-12",
+            "APFELSAFT-100", "ORANGENSAFT-100"
+        ]]],
+    },
+    {
+        "dt": "Customer",
+        "filters": [["customer_name", "in", [
+            "Gaststätte Zum Biergarten",
+            "Kiosk Am Bahnhof",
+            "Edeka Frisch & Gut"
+        ]]],
+    },
+    {
+        "dt": "Custom HTML Block",
+        "filters": [["name", "in", ["gk-dashboard-hero", "gk-dashboard-kpi"]]],
+    },
+]
+
+# Inject Getraenkehandel as default landing workspace for all users on login
+boot_session = "getraenkehandel.getraenkehandel.dashboard.set_default_workspace"
+
+# Auto-Pfand client script — runs on both Sales Order and Sales Invoice
+# Address map — Nominatim autocomplete + OpenStreetMap/Leaflet
+doctype_js = {
+    "Sales Invoice":  "public/js/pfand_script.js",
+    "Sales Order":    "public/js/pfand_script.js",
+    "Address":        "public/js/address_map.js",
+    "Delivery Trip":  ["public/js/delivery_trip_map.js", "public/js/delivery_trip_handover.js"],
+    "Driver":         "public/js/driver_account.js",
+}
+
+# Driver: auto-create Fahrerkasse account on save when checkbox is ticked
+doc_events = {
+    "Driver": {
+        "after_insert": "getraenkehandel.getraenkehandel.driver_account.on_driver_update",
+        "on_update":    "getraenkehandel.getraenkehandel.driver_account.on_driver_update",
+    },
+}
+
+# Global desk JS — module hiding + setup wizard
+app_include_js = "/assets/getraenkehandel/js/workspace.js"
+
 # Apps
 # ------------------
 
@@ -78,12 +163,6 @@ app_license = "mit"
 # 	"methods": "getraenkehandel.utils.jinja_methods",
 # 	"filters": "getraenkehandel.utils.jinja_filters"
 # }
-
-# Installation
-# ------------
-
-# before_install = "getraenkehandel.install.before_install"
-# after_install = "getraenkehandel.install.after_install"
 
 # Uninstallation
 # ------------

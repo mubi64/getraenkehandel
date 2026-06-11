@@ -1,0 +1,31 @@
+[
+  {
+    "title": "MwSt 19%",
+    "is_default": 1,
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_numbers": ["1776", "3806"],
+        "description": "Umsatzsteuer 19%",
+        "rate": 19.0
+      }
+    ]
+  },
+  {
+    "title": "MwSt 7%",
+    "is_default": 0,
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_numbers": ["1771", "3801"],
+        "description": "Umsatzsteuer 7%",
+        "rate": 7.0
+      }
+    ]
+  },
+  {
+    "title": "Steuerfrei",
+    "is_default": 0,
+    "taxes": []
+  }
+]

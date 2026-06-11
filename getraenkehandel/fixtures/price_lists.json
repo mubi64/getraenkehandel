@@ -1,0 +1,29 @@
+[
+  {
+    "doctype": "Price List",
+    "name": "Gastro Preisliste",
+    "price_list_name": "Gastro Preisliste",
+    "currency": "EUR",
+    "buying": 0,
+    "selling": 1,
+    "enabled": 1
+  },
+  {
+    "doctype": "Price List",
+    "name": "Kiosk Preisliste",
+    "price_list_name": "Kiosk Preisliste",
+    "currency": "EUR",
+    "buying": 0,
+    "selling": 1,
+    "enabled": 1
+  },
+  {
+    "doctype": "Price List",
+    "name": "Handel Preisliste",
+    "price_list_name": "Handel Preisliste",
+    "currency": "EUR",
+    "buying": 0,
+    "selling": 1,
+    "enabled": 1
+  }
+]

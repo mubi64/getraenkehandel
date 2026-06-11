@@ -1,0 +1,130 @@
+[
+  {
+    "item_code": "COLA-050",
+    "prices": {
+      "Gastro Preisliste":  0.85,
+      "Kiosk Preisliste":   0.95,
+      "Handel Preisliste":  1.05
+    }
+  },
+  {
+    "item_code": "FANTA-050",
+    "prices": {
+      "Gastro Preisliste":  0.85,
+      "Kiosk Preisliste":   0.95,
+      "Handel Preisliste":  1.05
+    }
+  },
+  {
+    "item_code": "SPRITE-050",
+    "prices": {
+      "Gastro Preisliste":  0.85,
+      "Kiosk Preisliste":   0.95,
+      "Handel Preisliste":  1.05
+    }
+  },
+  {
+    "item_code": "BIER-033",
+    "prices": {
+      "Gastro Preisliste":  0.65,
+      "Kiosk Preisliste":   0.75,
+      "Handel Preisliste":  0.85
+    }
+  },
+  {
+    "item_code": "BIER-050",
+    "prices": {
+      "Gastro Preisliste":  0.85,
+      "Kiosk Preisliste":   0.95,
+      "Handel Preisliste":  1.10
+    }
+  },
+  {
+    "item_code": "WEIZEN-050",
+    "prices": {
+      "Gastro Preisliste":  1.00,
+      "Kiosk Preisliste":   1.15,
+      "Handel Preisliste":  1.30
+    }
+  },
+  {
+    "item_code": "BIER-KISTE-20",
+    "prices": {
+      "Gastro Preisliste":  17.00,
+      "Kiosk Preisliste":   19.00,
+      "Handel Preisliste":  21.00
+    }
+  },
+  {
+    "item_code": "WASSER-050",
+    "prices": {
+      "Gastro Preisliste":  0.48,
+      "Kiosk Preisliste":   0.55,
+      "Handel Preisliste":  0.62
+    }
+  },
+  {
+    "item_code": "WASSER-100",
+    "prices": {
+      "Gastro Preisliste":  0.60,
+      "Kiosk Preisliste":   0.70,
+      "Handel Preisliste":  0.80
+    }
+  },
+  {
+    "item_code": "WASSER-KISTE-12",
+    "prices": {
+      "Gastro Preisliste":  6.50,
+      "Kiosk Preisliste":   7.50,
+      "Handel Preisliste":  8.50
+    }
+  },
+  {
+    "item_code": "APFELSAFT-100",
+    "prices": {
+      "Gastro Preisliste":  1.10,
+      "Kiosk Preisliste":   1.25,
+      "Handel Preisliste":  1.40
+    }
+  },
+  {
+    "item_code": "ORANGENSAFT-100",
+    "prices": {
+      "Gastro Preisliste":  1.20,
+      "Kiosk Preisliste":   1.35,
+      "Handel Preisliste":  1.50
+    }
+  },
+  {
+    "item_code": "PFAND-025",
+    "prices": {
+      "Gastro Preisliste":  0.25,
+      "Kiosk Preisliste":   0.25,
+      "Handel Preisliste":  0.25
+    }
+  },
+  {
+    "item_code": "PFAND-033",
+    "prices": {
+      "Gastro Preisliste":  0.08,
+      "Kiosk Preisliste":   0.08,
+      "Handel Preisliste":  0.08
+    }
+  },
+  {
+    "item_code": "PFAND-050",
+    "prices": {
+      "Gastro Preisliste":  0.15,
+      "Kiosk Preisliste":   0.15,
+      "Handel Preisliste":  0.15
+    }
+  },
+  {
+    "item_code": "PFAND-KISTE",
+    "prices": {
+      "Gastro Preisliste":  1.50,
+      "Kiosk Preisliste":   1.50,
+      "Handel Preisliste":  1.50
+    }
+  }
+]

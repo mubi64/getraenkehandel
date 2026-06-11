@@ -1,0 +1,20 @@
+[
+  {
+    "account_number": "1590",
+    "account_name": "Pfandverbindlichkeiten",
+    "root_type": "Liability",
+    "account_type": "Liability",
+    "is_group": 0,
+    "parent_account_name_like": "VIII. sonstige Verbindlichkeiten",
+    "note": "Bottle deposit liability — NEVER post to revenue. Moves to 8410 after 90 days unreturned."
+  },
+  {
+    "account_number": "8410",
+    "account_name": "Erlöse Pfand",
+    "root_type": "Income",
+    "account_type": "Income Account",
+    "is_group": 0,
+    "parent_account_name_like": "Erlöskonten",
+    "note": "Pfand revenue after 90-day non-return cron transfers balance from 1590."
+  }
+]

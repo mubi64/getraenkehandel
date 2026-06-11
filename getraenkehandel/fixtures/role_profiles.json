@@ -1,0 +1,17 @@
+[
+  {
+    "doctype": "Role Profile",
+    "name": "Getraenkehandel Operator",
+    "role_profile": "Getraenkehandel Operator",
+    "roles": [
+      {"doctype": "Has Role", "role": "Sales User"},
+      {"doctype": "Has Role", "role": "Sales Manager"},
+      {"doctype": "Has Role", "role": "Purchase User"},
+      {"doctype": "Has Role", "role": "Purchase Manager"},
+      {"doctype": "Has Role", "role": "Stock User"},
+      {"doctype": "Has Role", "role": "Stock Manager"},
+      {"doctype": "Has Role", "role": "Accounts User"},
+      {"doctype": "Has Role", "role": "Accounts Manager"}
+    ]
+  }
+]

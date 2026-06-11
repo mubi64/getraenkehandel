@@ -1,0 +1,20 @@
+[
+  {
+    "account_number": "3590",
+    "account_name": "Pfandverbindlichkeiten",
+    "root_type": "Liability",
+    "account_type": "Liability",
+    "is_group": 0,
+    "parent_account_name_like": "sonstige Verbindlichkeiten",
+    "note": "Bottle deposit liability — NEVER post to revenue."
+  },
+  {
+    "account_number": "4410",
+    "account_name": "Erlöse Pfand",
+    "root_type": "Income",
+    "account_type": "Income Account",
+    "is_group": 0,
+    "parent_account_name_like": "Umsatzerlöse",
+    "note": "Pfand revenue after 90-day non-return."
+  }
+]

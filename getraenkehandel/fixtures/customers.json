@@ -1,0 +1,26 @@
+[
+  {
+    "doctype": "Customer",
+    "name": "Gaststätte Zum Biergarten",
+    "customer_name": "Gaststätte Zum Biergarten",
+    "customer_group": "Gastronomie",
+    "customer_type": "Company",
+    "territory": "Germany"
+  },
+  {
+    "doctype": "Customer",
+    "name": "Kiosk Am Bahnhof",
+    "customer_name": "Kiosk Am Bahnhof",
+    "customer_group": "Kiosk/Späti",
+    "customer_type": "Company",
+    "territory": "Germany"
+  },
+  {
+    "doctype": "Customer",
+    "name": "Edeka Frisch & Gut",
+    "customer_name": "Edeka Frisch & Gut",
+    "customer_group": "Einzelhandel",
+    "customer_type": "Company",
+    "territory": "Germany"
+  }
+]
