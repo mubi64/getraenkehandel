@@ -14,18 +14,10 @@ setup_wizard_complete = "getraenkehandel.setup.install.after_setup_wizard"
 
 # Fixtures — global (non-company-specific) records exported/imported via bench
 fixtures = [
-    {
-        "dt": "Item Group",
-        "filters": [["item_group_name", "in", [
-            "Getränke", "Bier", "Wasser", "Softdrinks", "Säfte", "Spirituosen", "Pfand", "Leergut"
-        ]]],
-    },
-    {
-        "dt": "Customer Group",
-        "filters": [["customer_group_name", "in", [
-            "Gastronomie", "Kiosk/Späti", "Einzelhandel", "Privatkunde"
-        ]]],
-    },
+    # Item Group and Customer Group are nested-set doctypes — they require the
+    # ERPNext tree roots ("All Item Groups", "All Customer Groups") to have lft/rgt
+    # values set, which only happens after the setup wizard creates a company.
+    # They are created programmatically in after_setup_wizard() instead.
     {
         "dt": "Price List",
         "filters": [["price_list_name", "in", [

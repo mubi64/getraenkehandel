@@ -38,6 +38,7 @@ def after_install():
     _create_delivery_leergut_doctype()
     _create_custom_fields()
     _hide_sales_invoice_fields()
+    _setup_item_groups()   # must exist before sync_fixtures imports items
     frappe.db.set_default("desktop:home_page", "Getraenkehandel")
     frappe.db.commit()
 
@@ -48,6 +49,8 @@ def after_setup_wizard(args=None):
     At this point the company exists (created by the wizard) and args contains
     the wizard form data including company_name.
     """
+    _setup_item_groups()
+    _setup_customer_groups()
     _setup_chart_of_accounts()
     _setup_tax_templates()
     _setup_warehouses()
@@ -394,6 +397,62 @@ def _get_company():
     if not company:
         company = frappe.db.get_value("Company", {}, "name")
     return company
+
+
+# ---------------------------------------------------------------------------
+# Item Groups — nested set, must run after setup wizard initialises tree roots
+# ---------------------------------------------------------------------------
+
+ITEM_GROUPS = [
+    {"item_group_name": "Getränke",    "parent_item_group": "All Item Groups", "is_group": 1},
+    {"item_group_name": "Bier",        "parent_item_group": "Getränke",        "is_group": 0},
+    {"item_group_name": "Wasser",      "parent_item_group": "Getränke",        "is_group": 0},
+    {"item_group_name": "Softdrinks",  "parent_item_group": "Getränke",        "is_group": 0},
+    {"item_group_name": "Säfte",       "parent_item_group": "Getränke",        "is_group": 0},
+    {"item_group_name": "Spirituosen", "parent_item_group": "Getränke",        "is_group": 0},
+    {"item_group_name": "Pfand",       "parent_item_group": "All Item Groups", "is_group": 0},
+    {"item_group_name": "Leergut",     "parent_item_group": "All Item Groups", "is_group": 0},
+]
+
+def _setup_item_groups():
+    # Ensure root node exists before adding children
+    if not frappe.db.exists("Item Group", "All Item Groups"):
+        frappe.get_doc({
+            "doctype": "Item Group",
+            "item_group_name": "All Item Groups",
+            "is_group": 1,
+        }).insert(ignore_permissions=True)
+
+    for g in ITEM_GROUPS:
+        if frappe.db.exists("Item Group", g["item_group_name"]):
+            continue
+        try:
+            frappe.get_doc({"doctype": "Item Group", **g}).insert(ignore_permissions=True)
+        except Exception:
+            frappe.log_error(frappe.get_traceback(), "getraenkehandel: _setup_item_groups")
+
+
+# ---------------------------------------------------------------------------
+# Customer Groups — nested set, same constraint as Item Groups
+# ---------------------------------------------------------------------------
+
+CUSTOMER_GROUPS = [
+    "Gastronomie", "Kiosk/Späti", "Einzelhandel", "Privatkunde",
+]
+
+def _setup_customer_groups():
+    for name in CUSTOMER_GROUPS:
+        if frappe.db.exists("Customer Group", name):
+            continue
+        try:
+            frappe.get_doc({
+                "doctype": "Customer Group",
+                "customer_group_name": name,
+                "parent_customer_group": "All Customer Groups",
+                "is_group": 0,
+            }).insert(ignore_permissions=True)
+        except Exception:
+            frappe.log_error(frappe.get_traceback(), "getraenkehandel: _setup_customer_groups")
 
 
 # ---------------------------------------------------------------------------

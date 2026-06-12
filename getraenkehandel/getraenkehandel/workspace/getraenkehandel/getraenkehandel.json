@@ -24,7 +24,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Rechnungen",
+   "label": "Auftragsabwicklung",
    "link_count": 0,
    "onboard": 0,
    "type": "Card Break"
@@ -33,9 +33,20 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Ausgangsrechnung",
+   "label": "Zitat",
    "link_count": 0,
-   "link_to": "Sales Invoice",
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Auftrag",
+   "link_count": 0,
+   "link_to": "Sales Order",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -55,9 +66,9 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Angebot",
+   "label": "Liefertour",
    "link_count": 0,
-   "link_to": "Quotation",
+   "link_to": "Delivery Trip",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -66,11 +77,11 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Auftrag",
+   "label": "Ausgangsrechnung",
    "link_count": 0,
-   "link_to": "Sales Order",
+   "link_to": "Sales Invoice",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {

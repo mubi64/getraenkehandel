@@ -1,7 +1,7 @@
 [
  {
   "charts": [],
-  "content": "[{\"id\":\"gh-hero-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-hero\",\"col\":12}},{\"id\":\"gh-spacer-0a\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-kpi-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-kpi\",\"col\":12}},{\"id\":\"gh-spacer-0b\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-sc-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Offene Rechnungen\",\"col\":3}},{\"id\":\"gh-sc-2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kunden\",\"col\":3}},{\"id\":\"gh-sc-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lieferscheine\",\"col\":3}},{\"id\":\"gh-sc-4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pfand Ledger\",\"col\":3}},{\"id\":\"gh-spacer-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Verkauf &amp; Lieferung</b></span>\",\"col\":12}},{\"id\":\"gh-card-1\",\"type\":\"card\",\"data\":{\"card_name\":\"Rechnungen\",\"col\":4}},{\"id\":\"gh-card-2\",\"type\":\"card\",\"data\":{\"card_name\":\"Kunden & Konditionen\",\"col\":4}},{\"id\":\"gh-card-3\",\"type\":\"card\",\"data\":{\"card_name\":\"Zahlungen\",\"col\":4}},{\"id\":\"gh-spacer-2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Lager &amp; Sortiment</b></span>\",\"col\":12}},{\"id\":\"gh-card-4\",\"type\":\"card\",\"data\":{\"card_name\":\"Artikel\",\"col\":4}},{\"id\":\"gh-card-5\",\"type\":\"card\",\"data\":{\"card_name\":\"Preise\",\"col\":4}},{\"id\":\"gh-card-6\",\"type\":\"card\",\"data\":{\"card_name\":\"Lager\",\"col\":4}},{\"id\":\"gh-spacer-3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Pfand &amp; Berichte</b></span>\",\"col\":12}},{\"id\":\"gh-card-7\",\"type\":\"card\",\"data\":{\"card_name\":\"Pfand\",\"col\":4}},{\"id\":\"gh-card-8\",\"type\":\"card\",\"data\":{\"card_name\":\"Buchhaltungsberichte\",\"col\":4}},{\"id\":\"gh-card-9\",\"type\":\"card\",\"data\":{\"card_name\":\"Verkaufsberichte\",\"col\":4}}]",
+  "content": "[{\"id\":\"gh-hero-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-hero\",\"col\":12}},{\"id\":\"gh-spacer-0a\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-kpi-1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"gk-dashboard-kpi\",\"col\":12}},{\"id\":\"gh-spacer-0b\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-sc-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Offene Rechnungen\",\"col\":3}},{\"id\":\"gh-sc-2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kunden\",\"col\":3}},{\"id\":\"gh-sc-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lieferscheine\",\"col\":3}},{\"id\":\"gh-sc-4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pfand Ledger\",\"col\":3}},{\"id\":\"gh-spacer-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Verkauf &amp; Lieferung</b></span>\",\"col\":12}},{\"id\":\"gh-card-1\",\"type\":\"card\",\"data\":{\"card_name\":\"Auftragsabwicklung\",\"col\":4}},{\"id\":\"gh-card-2\",\"type\":\"card\",\"data\":{\"card_name\":\"Kunden & Konditionen\",\"col\":4}},{\"id\":\"gh-card-3\",\"type\":\"card\",\"data\":{\"card_name\":\"Zahlungen\",\"col\":4}},{\"id\":\"gh-spacer-2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Lager &amp; Sortiment</b></span>\",\"col\":12}},{\"id\":\"gh-card-4\",\"type\":\"card\",\"data\":{\"card_name\":\"Artikel\",\"col\":4}},{\"id\":\"gh-card-5\",\"type\":\"card\",\"data\":{\"card_name\":\"Preise\",\"col\":4}},{\"id\":\"gh-card-6\",\"type\":\"card\",\"data\":{\"card_name\":\"Lager\",\"col\":4}},{\"id\":\"gh-spacer-3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gh-hd-3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Pfand &amp; Berichte</b></span>\",\"col\":12}},{\"id\":\"gh-card-7\",\"type\":\"card\",\"data\":{\"card_name\":\"Pfand\",\"col\":4}},{\"id\":\"gh-card-8\",\"type\":\"card\",\"data\":{\"card_name\":\"Buchhaltungsberichte\",\"col\":4}},{\"id\":\"gh-card-9\",\"type\":\"card\",\"data\":{\"card_name\":\"Verkaufsberichte\",\"col\":4}}]",
   "custom_blocks": [
    {
     "custom_block_name": "gk-dashboard-hero",
@@ -25,7 +25,7 @@
    {
     "hidden": 0,
     "is_query_report": 0,
-    "label": "Rechnungen",
+    "label": "Auftragsabwicklung",
     "link_count": 0,
     "onboard": 0,
     "type": "Card Break"
@@ -34,9 +34,20 @@
     "dependencies": "",
     "hidden": 0,
     "is_query_report": 0,
-    "label": "Ausgangsrechnung",
+    "label": "Zitat",
     "link_count": 0,
-    "link_to": "Sales Invoice",
+    "link_to": "Quotation",
+    "link_type": "DocType",
+    "onboard": 0,
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "hidden": 0,
+    "is_query_report": 0,
+    "label": "Auftrag",
+    "link_count": 0,
+    "link_to": "Sales Order",
     "link_type": "DocType",
     "onboard": 1,
     "type": "Link"
@@ -56,9 +67,9 @@
     "dependencies": "",
     "hidden": 0,
     "is_query_report": 0,
-    "label": "Angebot",
+    "label": "Liefertour",
     "link_count": 0,
-    "link_to": "Quotation",
+    "link_to": "Delivery Trip",
     "link_type": "DocType",
     "onboard": 0,
     "type": "Link"
@@ -67,11 +78,11 @@
     "dependencies": "",
     "hidden": 0,
     "is_query_report": 0,
-    "label": "Auftrag",
+    "label": "Ausgangsrechnung",
     "link_count": 0,
-    "link_to": "Sales Order",
+    "link_to": "Sales Invoice",
     "link_type": "DocType",
-    "onboard": 0,
+    "onboard": 1,
     "type": "Link"
    },
    {
