@@ -87,8 +87,14 @@ doc_events = {
     },
 }
 
-# Global desk JS — module hiding + setup wizard
-app_include_js = "/assets/getraenkehandel/js/workspace.js"
+# Global desk JS — module hiding, setup wizard, and AI chat widget
+app_include_js = [
+    "/assets/getraenkehandel/js/workspace.js",
+    "/assets/getraenkehandel/js/ai_sidebar.js",
+]
+
+# Global desk CSS — AI chat widget styles
+app_include_css = "/assets/getraenkehandel/css/ai_sidebar.css"
 
 # Apps
 # ------------------

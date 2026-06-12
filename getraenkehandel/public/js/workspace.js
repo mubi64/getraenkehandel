@@ -11,16 +11,9 @@ const HIDE_WORKSPACES = [
 	'Home',
 ];
 
-$(document).on('page-change', function () {
-	getraenkehandel.redirect_to_default();
-	getraenkehandel.apply_ui_customizations();
-});
-
-frappe.after_ajax(function () {
-	getraenkehandel.redirect_to_default();
-	getraenkehandel.apply_ui_customizations();
-	getraenkehandel.maybe_show_setup_wizard();
-});
+// ---------------------------------------------------------------------------
+// Function definitions — must come before any event listeners that call them
+// ---------------------------------------------------------------------------
 
 getraenkehandel.redirect_to_default = function () {
 	const path = window.location.pathname.replace(/\/$/, '');
@@ -42,10 +35,6 @@ getraenkehandel._hide_sidebar_items = function () {
 		$(`.desk-sidebar a[title="${ws}"]`).closest('.standard-sidebar-item, li').hide();
 	});
 };
-
-// ---------------------------------------------------------------------------
-// Setup wizard — shown once after app install, before first real use
-// ---------------------------------------------------------------------------
 
 getraenkehandel.maybe_show_setup_wizard = function () {
 	if (frappe._getraenkehandel_setup_checked) return;
@@ -231,3 +220,18 @@ getraenkehandel._complete_setup = function () {
 	const company = frappe.defaults.get_default('company');
 	frappe.db.set_value('Company', company, 'custom_setup_complete', 1);
 };
+
+// ---------------------------------------------------------------------------
+// Event listeners — registered after all functions are defined
+// ---------------------------------------------------------------------------
+
+$(document).on('page-change', function () {
+	getraenkehandel.redirect_to_default();
+	getraenkehandel.apply_ui_customizations();
+});
+
+frappe.after_ajax(function () {
+	getraenkehandel.redirect_to_default();
+	getraenkehandel.apply_ui_customizations();
+	getraenkehandel.maybe_show_setup_wizard();
+});
