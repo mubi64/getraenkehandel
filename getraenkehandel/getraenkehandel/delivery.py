@@ -1,5 +1,6 @@
 import frappe
 from frappe import _
+import base64
 
 
 @frappe.whitelist()
@@ -267,6 +268,47 @@ def handover_driver_cash(driver, amount, company=None, date=None):
         return je.name
     finally:
         frappe.set_user(_original_user)
+
+
+# ---------------------------------------------------------------------------
+# Photo upload
+# ---------------------------------------------------------------------------
+
+@frappe.whitelist()
+def attach_delivery_photo(delivery_note, file_name, file_data):
+    """Attach a base64-encoded photo to a Delivery Note.
+
+    Called by the driver app after completing a stop.
+    Uses ignore_permissions so drivers can attach to submitted Delivery Notes
+    without needing write access on the doctype.
+
+    Args:
+        delivery_note: Name of the Delivery Note (e.g. "DN-00042")
+        file_name:     Filename with extension (e.g. "delivery_DN-00042_1234.jpg")
+        file_data:     Base64-encoded file content (data URI or raw base64)
+    """
+    if not frappe.db.exists("Delivery Note", delivery_note):
+        frappe.throw(_("Lieferschein {0} nicht gefunden.").format(delivery_note))
+
+    # Strip data URI prefix if present (e.g. "data:image/jpeg;base64,...")
+    if "," in file_data:
+        file_data = file_data.split(",", 1)[1]
+
+    content = base64.b64decode(file_data)
+
+    frappe.flags.ignore_permissions = True
+    file_doc = frappe.get_doc({
+        "doctype": "File",
+        "file_name": file_name,
+        "attached_to_doctype": "Delivery Note",
+        "attached_to_name": delivery_note,
+        "content": content,
+        "is_private": 0,
+    })
+    file_doc.save()
+    frappe.db.commit()
+
+    return {"file_url": file_doc.file_url, "name": file_doc.name}
 
 
 # ---------------------------------------------------------------------------
